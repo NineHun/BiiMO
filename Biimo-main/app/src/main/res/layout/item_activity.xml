@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/item_background"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/activityIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_wheel_care"
+        android:backgroundTint="@color/primaryColor"
+        android:contentDescription="Icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/activityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wheel Care"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activityTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:00 AM"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_arrow_right"
+        android:contentDescription="Arrow Icon" />
+</LinearLayout>
